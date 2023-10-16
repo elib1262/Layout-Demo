@@ -1,0 +1,78 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #8C92AC;
+    --text-background: #919494;
+    --border-color: gray;
+    --text-color: #2e293a;
+    --text-color-alternative: #F8F8FF;
+}
+
+body {
+    background: var(--background);
+    color: var(--text-color);
+}
+
+.page {
+    margin: 1em 6em;
+}
+
+.header {
+    background-color: var(--text-background);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    width: inherit;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row-wrap;
+    list-style-type: none;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+}
+
+.main-left-content {
+    background-color: var(--text-background);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin: 0.5em 0;
+    padding: 10px;
+    height: 154px;
+}
+
+.main-right-content {
+    background-color: var(--text-background);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin: 0.5em 0;
+    padding: 10px;
+    height: 100px;
+}
+
+.footer {
+    background-color: var(--text-background);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    text-align: center;
+    height: 5em;
+    padding-top: 1em
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--text-color-alternative);
+    font-size: large;
+}
